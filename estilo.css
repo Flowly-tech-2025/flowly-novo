@@ -250,12 +250,14 @@ main {
         max-width: 95%;
     }
     .hero-image{
-        margin-top: -80px;
+        margin-top: 0px;
         margin-bottom: 15px;
     }
     .explore-btn {
         padding: 12px 24px;
         font-size: 0.9rem;
+        z-index: 10;
+        position: relative;
     }
     
     .slider-container {
@@ -298,12 +300,14 @@ main {
         padding: 15px 26px;
     }
     .hero-image{
-        margin-top: -80px;
+        margin-top: 0px;
         margin-bottom: 18px;
     }
     .explore-btn {
         padding: 15px 30px;
         font-size: 1.1rem;
+        z-index: 10;
+        position: relative;
     }
     
     .slider-container {
