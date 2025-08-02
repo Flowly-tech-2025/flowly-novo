@@ -2011,7 +2011,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
+    z-index: 10002;
     transition: bottom 0.3s ease;
     backdrop-filter: blur(10px);
 }
@@ -2160,6 +2160,12 @@ footer {
     .cookie-banner {
         flex-direction: column;
         text-align: center;
+        padding: 15px;
+        bottom: -100%;
+    }
+    
+    .cookie-banner.show {
+        bottom: 0;
     }
     
     .cookie-content {
@@ -2169,6 +2175,11 @@ footer {
     
     .cookie-buttons {
         justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .cookie-btn {
+        min-width: 120px;
     }
     
     .cookie-settings-content {

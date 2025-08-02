@@ -31,12 +31,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Função para criar o banner de cookies
+// Função para criar o banner de cookies
 function criarBannerCookies() {
     const banner = document.createElement('div');
     banner.className = 'cookie-banner';
     banner.innerHTML = `
         <div class="cookie-content">
-            <p>Utilizamos cookies para melhorar sua experiência em nosso site. Ao continuar navegando, você concorda com nossa <a href="privacisade.html" style="color: #ff3e3e; text-decoration: underline;">Política de Privacidade</a>.</p>
+            <p>Utilizamos cookies para melhorar sua experiência em nosso site. Ao continuar navegando, você concorda com nossa <a href="#" onclick="showSection('privacidade')" style="color: #ff3e3e; text-decoration: underline;">Política de Privacidade</a>.</p>
         </div>
         <div class="cookie-buttons">
             <button class="cookie-btn cookie-btn-settings">Personalizar</button>
