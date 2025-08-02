@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowly</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="img/icone.png.jpeg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header role="banner">
+        <figure class="logo">
+            <img src="img/logonovo.png" alt="Logo da empresa">
+        </figure>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('sobre')">Sobre Nós</a></li>
+                <li><a href="#" onclick="showSection('servicos')">Serviços</a></li>
+                <li><a href="#" onclick="showSection('contato')">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="position: fixed;" role="main">
+        <!-- SEÇÃO HOME -->
+        <section id="home" class="hero-section">
+            <article class="hero-content">
+                <div class="text-blocks" aria-label="Mensagens principais">
+                    <p class="block">SUA MARCA</p>
+                    <p class="block">NA INTERNET</p>
+                    <p class="block">COM ESTRATÉGIA</p>
+                    <p class="block">E TECNOLOGIA</p>
+                </div>
+                <a href="#" onclick="showSection('servicos')" class="explore-btn" aria-label="Conheça mais sobre nossos serviços">CONHEÇA MAIS</a>
+            </article>
+            <section class="hero-image" aria-label="Galeria de imagens">
+                <div class="slider-container">
+                    <div class="slider" role="region" aria-label="Carrossel de imagens">
+                        <img src="img/mockup1.png" alt="Mobile Design" class="phone-mockup">
+                        <!-- Adicione os indicadores aqui -->
+                        <div class="slider-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- SEÇÃO SOBRE NÓS -->
+    <section id="sobre" class="about-section">
+        <article class="welcome-content">
+            <h1>Bem-vindo à Flowly - Sites que fluem com o seu negócio</h1>
+            <div class="welcome-text" aria-label="Sobre nossa empresa">
+                <p>Na Flowly, transformamos ideias em experiências digitais. Somos especialistas na criação de sites modernos, eficientes e personalizados para empresas que desejam se destacar online. Seja você um pequeno negócio em crescimento ou uma marca consolidada, desenvolvemos soluções sob medida que conectam você ao seu público com design, performance e propósito.</p>
+                <p>Somos uma empresa especializada em desenvolvimento web, focada em criar soluções digitais que impulsionam o crescimento dos nossos clientes.</p>
+                <p>Acreditamos que cada projeto é único e merece uma abordagem personalizada, combinando criatividade, tecnologia e estratégia para entregar resultados excepcionais.</p>
+                <p>Nosso processo é simples, fluido e focado em resultados: entendemos as necessidades do seu negócio, criamos um projeto visual impactante e entregamos um site funcional, responsivo e otimizado para conversões.</p>
+                <p>Se o seu negócio merece uma presença digital à altura, a Flowly é a parceira ideal para levar você até lá.</p>
+                <p class="cta-text"><a href="https://wa.me/5516992915540">Vamos criar juntos?</a></p>
+            </div>
+        </article>
+        <button onclick="showSection('home')" style="position: fixed; top: 20px; right: 20px; background: #ff3e3e; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer; z-index: 10001;">✕ Fechar</button>
+    </section>
+
+    <!-- SEÇÃO SERVIÇOS -->
+    <section id="servicos" class="services-section">
+        <div class="services-container">
+            <div class="services-header">
+                <h1 class="services-main-title">Serviços</h1>
+                <div class="divider"></div>
+                <p class="services-subtitle">Transformamos suas ideias em soluções digitais inovadoras e eficientes</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card-modern">
+                    <div class="card-image-container">
+                        <img src="img/INSTITUCIONAL.jpg" alt="Criação de Sites Institucionais" class="service-image-modern">
+                        <div class="image-overlay">
+                            <div class="overlay-icon"> 📘</div>
+                        </div>
+                    </div>
+                    <div class="card-content-modern">
+                        <h3 class="service-title-modern">Sites Institucionais</h3>
+                        <p class="service-description-modern">Desenvolvemos sites profissionais sob medida para apresentar sua empresa, produtos e serviços de forma clara, moderna e confiável.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Responsivo</span>
+                            <span class="feature-tag">SEO Otimizado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card-modern">
+                    <div class="card-image-container">
+                        <img src="img/LANDING PAGE.jpg" alt="Landing Pages" class="service-image-modern">
+                        <div class="image-overlay">
+                            <div class="overlay-icon">🎯</div>
+                        </div>
+                    </div>
+                    <div class="card-content-modern">
+                        <h3 class="service-title-modern">Landing Pages</h3>
+                        <p class="service-description-modern">Páginas focadas em conversão para campanhas específicas, produtos ou serviços, otimizadas para gerar leads e vendas.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Alta Conversão</span>
+                            <span class="feature-tag">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card-modern">
+                    <div class="card-image-container">
+                        <img src="img/SEO.jpg" alt="SEO e Otimização" class="service-image-modern">
+                        <div class="image-overlay">
+                            <div class="overlay-icon">📈</div>
+                        </div>
+                    </div>
+                    <div class="card-content-modern">
+                        <h3 class="service-title-modern">SEO e Otimização</h3>
+                        <p class="service-description-modern">Otimização para mecanismos de busca, garantindo que seu site seja encontrado pelos seus clientes potenciais.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Google Ranking</span>
+                            <span class="feature-tag">Performance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card-modern">
+                    <div class="card-image-container">
+                        <img src="img/MANUTENÇÃO (2).jpg" alt="Manutenção de Sites" class="service-image-modern">
+                        <div class="image-overlay">
+                            <div class="overlay-icon">🔧</div>
+                        </div>
+                    </div>
+                    <div class="card-content-modern">
+                        <h3 class="service-title-modern">Manutenção de Sites</h3>
+                        <p class="service-description-modern">Serviços completos de manutenção e atualização para manter seu site sempre funcionando perfeitamente e atualizado.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Suporte 24/7</span>
+                            <span class="feature-tag">Atualizações</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card-modern">
+                    <div class="card-image-container">
+                        <img src="img/responsivo.jpg" alt="Design Responsivo" class="service-image-modern">
+                        <div class="image-overlay">
+                            <div class="overlay-icon">📱</div>
+                        </div>
+                    </div>
+                    <div class="card-content-modern">
+                        <h3 class="service-title-modern">Design Responsivo</h3>
+                        <p class="service-description-modern">Criamos sites que se adaptam perfeitamente a todos os dispositivos, garantindo uma experiência excelente em qualquer tela.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Mobile First</span>
+                            <span class="feature-tag">Cross-Platform</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card-modern">
+                    <div class="card-image-container">
+                        <img src="img/ux.jpg" alt="UX/UI Design" class="service-image-modern">
+                        <div class="image-overlay">
+                            <div class="overlay-icon">🎨</div>
+                        </div>
+                    </div>
+                    <div class="card-content-modern">
+                        <h3 class="service-title-modern">UX/UI Design</h3>
+                        <p class="service-description-modern">Design centrado no usuário para criar interfaces intuitivas e experiências digitais que convertem visitantes em clientes.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">User-Centered</span>
+                            <span class="feature-tag">Conversão</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card-modern">
+                    <div class="card-image-container">
+                        <img src="img/blog.jpg" alt="Criação de Blog" class="service-image-modern">
+                        <div class="image-overlay">
+                            <div class="overlay-icon">✍️</div>
+                        </div>
+                    </div>
+                    <div class="card-content-modern">
+                        <h3 class="service-title-modern">Criação de Blog</h3>
+                        <p class="service-description-modern">Desenvolvimento de blogs profissionais para fortalecer sua presença digital e engajar seu público com conteúdo relevante.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">CMS Integrado</span>
+                            <span class="feature-tag">SEO Ready</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="showSection('home')" style="position: fixed; top: 20px; right: 20px; background: #ff3e3e; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer; z-index: 10001;">✕ Fechar</button>
+    </section>
+
+    <!-- SEÇÃO CONTATO -->
+    <section id="contato" class="contact-section">
+        <div class="contact-container-wrapper">
+            <h2>Entre em Contato</h2>
+            <p class="contact-intro">Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+            
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="nome">Nome Completo*</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail*</label>
+                    <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensagem">Mensagem*</label>
+                    <textarea id="mensagem" name="mensagem" required placeholder="Descreva seu projeto ou dúvida"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Enviar Mensagem</button>
+            </form>
+        </div>
+        <button onclick="showSection('home')" style="position: fixed; top: 20px; right: 20px; background: #ff3e3e; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer; z-index: 10001;">✕ Fechar</button>
+    </section>
+
+    <!-- SEÇÃO POLÍTICA DE PRIVACIDADE -->
+    <section id="privacidade" class="privacy-section">
+        <div class="privacy-container">
+            <nav class="privacy-nav" aria-label="Navegação da política de privacidade">
+                <a href="#informacoes">Informações que Coletamos</a>
+                <a href="#finalidade">Finalidade da Coleta</a>
+                <a href="#compartilhamento">Compartilhamento de Dados</a>
+                <a href="#cookies">Uso de Cookies</a>
+                <a href="#seguranca">Armazenamento e Segurança</a>
+                <a href="#direitos">Direitos do Usuário</a>
+                <a href="#alteracoes">Alterações nesta Política</a>
+                <a href="#contato-privacidade">Contato</a>
+            </nav>
+            
+            <div class="privacy-content">
+                <section id="informacoes" class="privacy-section-content">
+                    <h2>Informações que Coletamos</h2>
+                    <p>Ao utilizar nosso site, coletamos algumas informações pessoais com o objetivo de oferecer um atendimento mais eficiente. As informações coletadas podem incluir:</p>
+                    <ul>
+                        <li>Nome</li>
+                        <li>Telefone</li>
+                        <li>E-mail</li>
+                    </ul>
+                    <p>Esses dados são fornecidos voluntariamente por você por meio de formulários de contato, solicitações de orçamento ou outros meios disponíveis em nosso site.</p>
+                </section>
+                
+                <section id="finalidade" class="privacy-section-content">
+                    <h2>Finalidade da Coleta de Dados</h2>
+                    <p>Utilizamos os dados pessoais coletados para:</p>
+                    <ul>
+                        <li>Entrar em contato com você para responder dúvidas, orçamentos ou outras solicitações.</li>
+                        <li>Enviar informações sobre nossos serviços, promoções e novidades (caso você opte por receber).</li>
+                        <li>Melhorar a navegação e a experiência do usuário em nosso site.</li>
+                    </ul>
+                </section>
+                
+                <section id="compartilhamento" class="privacy-section-content">
+                    <h2>Compartilhamento de Dados</h2>
+                    <p>Seus dados não são vendidos ou compartilhados com terceiros para fins comerciais. O compartilhamento pode ocorrer apenas com:</p>
+                    <ul>
+                        <li>Serviços de hospedagem ou ferramentas de marketing, exclusivamente para execução das nossas atividades.</li>
+                        <li>Autoridades legais, em caso de exigência por lei ou determinação judicial.</li>
+                    </ul>
+                </section>
+                
+                <section id="cookies" class="privacy-section-content">
+                    <h2>Uso de Cookies</h2>
+                    <p>Nosso site utiliza cookies para melhorar a funcionalidade, personalizar conteúdo e entender o comportamento de navegação dos usuários. Os cookies são pequenos arquivos de texto armazenados em seu dispositivo quando você visita nosso site.</p>
+                    <p>Utilizamos os seguintes tipos de cookies:</p>
+                    <ul>
+                        <li><strong>Cookies Essenciais:</strong> Necessários para o funcionamento básico do site. Não podem ser desativados.</li>
+                        <li><strong>Cookies Analíticos:</strong> Nos ajudam a entender como os visitantes interagem com o site, permitindo melhorar a experiência do usuário.</li>
+                        <li><strong>Cookies de Marketing:</strong> Utilizados para exibir anúncios relevantes com base em seus interesses.</li>
+                    </ul>
+                    <p>Ao acessar nosso site pela primeira vez, você verá um banner de cookies que permite aceitar todos os cookies ou personalizar suas preferências. Você pode alterar suas preferências a qualquer momento.</p>
+                    <p>Você também pode optar por desativar os cookies nas configurações do seu navegador, mas isso pode afetar algumas funcionalidades do site.</p>
+                </section>
+                
+                <section id="seguranca" class="privacy-section-content">
+                    <h2>Armazenamento e Segurança</h2>
+                    <p>Adotamos medidas de segurança para proteger seus dados pessoais contra acesso não autorizado, alteração, divulgação ou destruição.</p>
+                    <p>Seus dados são armazenados em ambientes seguros e somente pelo tempo necessário para cumprir as finalidades mencionadas nesta política.</p>
+                </section>
+                
+                <section id="direitos" class="privacy-section-content">
+                    <h2>Direitos do Usuário</h2>
+                    <p>Você tem o direito de:</p>
+                    <ul>
+                        <li>Solicitar acesso aos seus dados.</li>
+                        <li>Corrigir ou atualizar informações pessoais.</li>
+                        <li>Solicitar a exclusão dos seus dados.</li>
+                        <li>Retirar o consentimento para uso de dados a qualquer momento.</li>
+                    </ul>
+                    <p>Para exercer qualquer desses direitos, entre em contato conosco pelo e-mail abaixo.</p>
+                </section>
+                
+                <section id="alteracoes" class="privacy-section-content">
+                    <h2>Alterações nesta Política</h2>
+                    <p>Esta Política de Privacidade pode ser atualizada periodicamente. Recomendamos que você a revise com frequência para estar ciente de quaisquer mudanças.</p>
+                    <p>Data da última atualização: 17 de maio de 2025</p>
+                </section>
+                
+                <section id="contato-privacidade" class="privacy-section-content">
+                    <h2>Contato</h2>
+                    <p>Se você tiver dúvidas ou solicitações relacionadas à nossa Política de Privacidade, entre em contato conosco:</p>
+                    <p>Flowly</p>
+                    <p>E-mail: contato@flowly.com.br</p>
+                    <p>Telefone: (16) 99291-5540</p>
+                </section>
+            </div>
+        </div>
+        <button onclick="showSection('home')" style="position: fixed; top: 20px; right: 20px; background: #ff3e3e; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer; z-index: 10001;">✕ Fechar</button>
+    </section>
+
+    <footer>
+        <section class="footer-left">
+            <p><small>Flowly © Copyright 2025</small></p>
+        </section>
+        <section class="footer-center">
+            <nav aria-label="Links do rodapé">
+                <a href="#" onclick="showSection('privacidade')"><strong>Política de Privacidade</strong></a>
+            </nav>
+        </section>
+        <section class="footer-right">
+            <a href="https://wa.me/5516992915540" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: inherit;"><img src="img/whatsapp-icon.png" alt="WhatsApp"></a>
+            <a href="https://www.instagram.com/flowly_sites?igsh=ZjFkZXNkNTR3NzB3&utm_source=qr" target="_blank"><img src="img/instagram-removebg-preview.png" alt="Instagram da empresa"></a>
+        </section>
+    </footer>
+
+    <script>
+        function showSection(sectionName) {
+            // Esconder todas as seções
+            document.getElementById('sobre').style.display = 'none';
+            document.getElementById('servicos').style.display = 'none';
+            document.getElementById('contato').style.display = 'none';
+            document.getElementById('privacidade').style.display = 'none';
+            
+            // Mostrar a seção home sempre
+            document.querySelector('main').style.display = 'block';
+            
+            // Se não for home, mostrar a seção específica
+            if (sectionName !== 'home') {
+                document.getElementById(sectionName).style.display = 'block';
+            }
+        }
+        
+        // Inicializar mostrando apenas a home
+        document.addEventListener('DOMContentLoaded', function() {
+            showSection('home');
+        });
+    </script>
+    <script src="js/cookies.js"></script>
+    <script src="js/contato.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
